@@ -46,3 +46,9 @@
 0	1	0
 0	3	1
 #
+##End of model description
+#BOCR Matrix
+0	0	1500	0
+0	0	1110	0
+0	0	1000	0
+#
