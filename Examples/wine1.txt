@@ -1,5 +1,5 @@
 --This example is to show the ranking reversal happening on AHP methods (in conjunction with wine2.txt model) 
-%What is the best quality wine in the market?
+--What is the best quality wine in the market?
 #Criteria Matrix
 1	3	5	0	1	0
 0	1	7	0	1	6
