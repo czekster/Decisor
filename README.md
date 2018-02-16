@@ -49,9 +49,7 @@ And several other problems. The strength of AHP is its ability to easily create 
 
 ## User Manual
 The **Decisor** software is a very intuitive and simple tool to model decision problems using AHP.
-We will be using a dummy model (very simple) and also the model decribed by in the [Wikipedia-AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) page, where a decision model to hire someone is under consideration.
-
-The software is shipped with a number of models in the /Examples folder. Our working example based on Wikipedia is called **leader.txt**.
+We will be using a dummy model (very simple) (located at the /Examples folder) and also the model decribed by in the [Wikipedia-AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) page, where a decision model to hire someone is under consideration.
 
 ### Start screen
 ![Start Screen](https://github.com/unisc/decisorGUI/blob/master/images/start-screen.png)
@@ -98,7 +96,8 @@ Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modell
 |**2,4,6,8**|Intermediate values among the scale. |A good compromise between two characteristics acting as a reasonable balance.|
 |**Reciprocals**|If a compared pair at position (i,j) has value over zero, then the pair at position (j,i) should have assigned 1/value, i.e., a reciprocal value. |The reciprocals values cause the model to have certain equilibrium WRT the elements.|
 
-We have decided to enter importance by assigning different weights among criteria such as efficiency is considerably more important (5) than punctuality:
+### Entering pairwise into the dummy model
+We have decided to enter importance by assigning different weights among criteria such as efficiency is considerably more important than punctuality:
 ![Pairwise judgements](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-criteria-pairwise.png)
 
 The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. Note that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be **swithed off** if desired by clicking in *Settings, Automatic Calculation*.
