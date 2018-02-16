@@ -57,9 +57,14 @@ The software is shipped with a number of models in the /Examples folder. Our wor
 ![Start Screen](https://github.com/unisc/decisorGUI/blob/master/images/start-screen.png)
 
 At this point it is possible to:
-- Insert an Objective
-- Add up to two Criteria
-- Add up to two Alternatives
+- Insert an **Objective**
+- Insert up to two **Criteria**
+- Insert up to two **Alternatives**
+
+If needed more criteria or alternatives, the modeller should press the button **ADD** where the Decisor software will add another criterion or alternative to the model.
+If some criterion or alternative needs to be excluded, the modeller should choose one (by clicking at its checkbox) and then pressing the **Delete Selected** button.
+
+It is a good practice to always press the **Update** button after a criterion or alternative is edited. The system will internally updates the screens to reflect the changes (the tab bars).
 
 ### Creating a simple model
 After entering some text into the input fields, and pressing the **Update** button, the system will automatically create three more tabs on top, one for the criterion-criterion pairwise comparisons, one for the comparisons among alternatives for the first criterion and another one for the second criterion, as shown by next figure (we are using a simplistic *dummy model* of two criteria and two alternatives, just as a simple example):
@@ -93,14 +98,22 @@ Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modell
 |**2,4,6,8**|Intermediate values among the scale. |A good compromise between two characteristics acting as a reasonable balance.|
 |**Reciprocals** |If a compared pair at position [i,j] has value over zero, then the pair at position [j,i] should have assigned 1/value, i.e., a reciprocal value. |The reciprocals values cause the model to have certain equilibrium WRT the elements.|
 
+We have decided to enter importance by assigning different weights among criteria such as efficiency is considerably more important (5) than punctuality:
+![Pairwise judgements](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-criteria-pairwise.png)
 
+The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. Note that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be changed to **off** if desired by clicking in *Settings > Automatic Calculation*.
+
+Next, we should conduct the judgements for each criterion in respect to the possible alternatives:
+**Effectiveness with respect to all alternatives**
+![Pairwise judgements for effectiveness](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-effectiveness-pairwise.png)
+
+And
+**Punctuality with respect to all alternatives**
+![Pairwise judgements for punctuality](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-punctuality-pairwise.png)
+
+Note that the software presents the choice for this problem: management should hire Richard, despite the fact that Nancy is more punctual than others. This is due to the fact that the company prefers effectiveness over punctuality, as stated in the criteria tab for the model.
 
 ## Working with more sophisticated models
-If needed more criteria or alternatives, the modeller should press the button **ADD** where the Decisor software will add another criterion or alternative to the model.
-If some criterion or alternative needs to be excluded, the modeller should choose one (by clicking at its checkbox) and then pressing the **Delete Selected** button.
-
-It is a good practice to always press the **Update** button after a criterion or alternative is edited. The system will internally updates the screens to reflect the changes (the tab bars).
-
 In next figure, we have clicked in *Open*, then selected the *Examples* folder and then we have choosed the **leader.txt** model):
 ![Leader Model](https://github.com/unisc/decisorGUI/blob/master/images/leader-model.png)
 
