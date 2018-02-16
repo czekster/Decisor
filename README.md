@@ -29,7 +29,7 @@ Our software is suited for decision problems with multiple criteria and alternat
 
 ## AHP basic notions
 A model is comprised by three 'entities': an **O**bjective, a list of **C**riteria, and a list of **A**lternatives.
-![AHP model](https://github.com/unisc/decisorGUI/blob/master/model-ahp.png)
+![AHP model](https://github.com/unisc/decisorGUI/blob/master/images/model-ahp.png)
 
 After defining the model, the modeller should assign judgements between criteria and then, per criterion, judgements among alternatives. This process is called pairwise comparison and it involves selection relative weights (from several scales, the simplest one been originally defined by T. L. Saaty as odd numbers from 1 to 9 - even numbers could be used as well as intermediary values), filling the internal matrices accordingly. 
 
@@ -49,6 +49,60 @@ And several other problems. The strength of AHP is its ability to easily create 
 
 ## User Manual
 The **Decisor** software is a very intuitive and simple tool to model decision problems using AHP.
+We will be using a dummy model (very simple) and also the model decribed by in the [Wikipedia-AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) page, where a decision model to hire someone is under consideration.
+
+The software is shipped with a number of models in the /Examples folder. Our working example based on Wikipedia is called **leader.txt**.
+
+### Start screen
+![Start Screen](https://github.com/unisc/decisorGUI/blob/master/images/start-screen.png)
+
+At this point it is possible to:
+- Insert an Objective
+- Add up to two Criteria
+- Add up to two Alternatives
+
+### Creating a simple model
+After entering some text into the input fields, and pressing the **Update** button, the system will automatically create three more tabs on top, one for the criterion-criterion pairwise comparisons, one for the comparisons among alternatives for the first criterion and another one for the second criterion, as shown by next figure (we are using a simplistic *dummy model* of two criteria and two alternatives, just as a simple example):
+![Adding criteria and alternatives](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model.png)
+
+It is possible to see the tabs that were created on top. If the user selects the first tab (**Criteria**):
+![Criteria selected](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-criteria.png)
+
+To conduct pairwise comparisons for the *Effectiveness* criterion:
+![Effectiveness selected](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-effectiveness.png)
+
+To conduct pairwise comparisons for the *Punctuality* criterion:
+![Punctuality selected](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-punctuality.png)
+
+If one decides to update the model, i.e., by adding more alternatives, one should go back to the **Model** tab, press **ADD** and then insert *Richard* as a new alternave (for instance):
+![New alternative Richard](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-richard.png)
+
+After we added the alternative we have pressed the **Update** button as well. See that the tab **Criteria** is unchanged, however, for the criterion (both), it has added a new Alternative (in this case, *Richard*):
+![New alternative Richard](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-richard2.png)
+
+### Pairwise comparisons
+Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modeller should perform judgements among criteria, using a scale. For the sake of our example, we will use the standard Fundamental Scale proposed by Saaty, where elements are entered in a 1 to 9 scale, where 1 is indifferent, and 9 is of high importance. Next table explains the scale in detail:
+
+|*Scale* | *Definition* | *Explanation*|
+|:--------:|:-----------|:------------|
+|**1**|Same importance, indifference. |Both elements contribute equally towards the objective.|
+|**3**|Small importance one over another. |One element is slightly favored with respect to (W.R.T.) the other.|
+|**5**|Considerable importance, essential. |One characteristic is highly important WRT the other.|
+|**7**|High importance. |One aspect is strongly more important WRT the other in comparison, dominating the other.|
+|**9**|Highest importance, absolute. |Highest importance between two elements, with high level of confidence of its relevance.|
+|**2,4,6,8**|Intermediate values among the scale. |A good compromise between two characteristics acting as a reasonable balance.|
+|**Reciprocals** |If a compared pair at position [i,j] has value over zero, then the pair at position [j,i] should have assigned 1/value, i.e., a reciprocal value. |The reciprocals values cause the model to have certain equilibrium WRT the elements.|
+
+
+
+## Working with more sophisticated models
+If needed more criteria or alternatives, the modeller should press the button **ADD** where the Decisor software will add another criterion or alternative to the model.
+If some criterion or alternative needs to be excluded, the modeller should choose one (by clicking at its checkbox) and then pressing the **Delete Selected** button.
+
+It is a good practice to always press the **Update** button after a criterion or alternative is edited. The system will internally updates the screens to reflect the changes (the tab bars).
+
+In next figure, we have clicked in *Open*, then selected the *Examples* folder and then we have choosed the **leader.txt** model):
+![Leader Model](https://github.com/unisc/decisorGUI/blob/master/images/leader-model.png)
 
 
 
