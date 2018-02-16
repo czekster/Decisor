@@ -88,7 +88,7 @@ After we added the alternative we have pressed the **Update** button as well. Se
 ### Pairwise comparisons
 Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modeller should perform judgements among criteria, using a scale. For the sake of our example, we will use the standard Fundamental Scale proposed by Saaty, where elements are entered in a 1 to 9 scale, where 1 is indifferent, and 9 is of high importance. Next table explains the scale in detail:
 
-|*Scale* | *Definition* | *Explanation*|
+|*Scale*|*Definition*|*Explanation*|
 |:---:|:-------|:------------|
 |**1**|Same importance, indifference. |Both elements contribute equally towards the objective.|
 |**3**|Small importance one over another. |One element is slightly favored with respect to (W.R.T.) the other.|
@@ -96,25 +96,7 @@ Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modell
 |**7**|High importance. |One aspect is strongly more important WRT the other in comparison, dominating the other.|
 |**9**|Highest importance, absolute. |Highest importance between two elements, with high level of confidence of its relevance.|
 |**2,4,6,8**|Intermediate values among the scale. |A good compromise between two characteristics acting as a reasonable balance.|
-|**Reciprocals** |If a compared pair at position [i,j] has value over zero, then the pair at position [j,i] should have assigned 1/value, i.e., a reciprocal value. |The reciprocals values cause the model to have certain equilibrium WRT the elements.|
-
-We have decided to enter importance by assigning different weights among criteria such as efficiency is considerably more important (5) than punctuality:
-![Pairwise judgements](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-criteria-pairwise.png)
-
-The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. Note that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be **swithed off** if desired by clicking in *Settings, Automatic Calculation*.
-
-Next, we should conduct the judgements for each criterion in respect to the possible alternatives:
-**Effectiveness with respect to all alternatives**
-![Pairwise judgements for effectiveness](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-effectiveness-pairwise.png)
-
-**Punctuality with respect to all alternatives**
-![Pairwise judgements for punctuality](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-punctuality-pairwise.png)
-
-Note that the software presents the choice for this problem: management should hire Richard, despite the fact that Nancy is more punctual than others. This is due to the fact that the company prefers effectiveness over punctuality, as stated in the criteria tab for the model.
-
-## Working with more sophisticated models
-In next figure, we have clicked in *Open*, then selected the *Examples* folder and then we have choosed the **leader.txt** model):
-![Leader Model](https://github.com/unisc/decisorGUI/blob/master/images/leader-model.png)
+|**Reciprocals**|If a compared pair at position (i,j) has value over zero, then the pair at position (j,i) should have assigned 1/value, i.e., a reciprocal value. |The reciprocals values cause the model to have certain equilibrium WRT the elements.|
 
 
 
