@@ -47,8 +47,10 @@ Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modell
 |**2,4,6,8**|Intermediate values among the scale. |A good compromise between two characteristics acting as a reasonable balance.|
 |**Reciprocals**|If a compared pair at position (i,j) has value over zero, then the pair at position (j,i) should have assigned 1/value, i.e., a reciprocal value. |The reciprocals values cause the model to have certain equilibrium WRT the elements.|
 
-## Entering pairwise into the dummy model
+## Entering pairwise comparisons into the dummy model
 We have decided to enter importance by assigning different weights among criteria such as efficiency is considerably more important than punctuality:
+
+
 ![Pairwise judgements](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-criteria-pairwise.png)
 
 The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. Note that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be **swithed off** if desired by clicking in *Settings, Automatic Calculation*.
