@@ -84,7 +84,7 @@ After we added the alternative we have pressed the **Update** button as well. Se
 Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modeller should perform judgements among criteria, using a scale. For the sake of our example, we will use the standard Fundamental Scale proposed by Saaty, where elements are entered in a 1 to 9 scale, where 1 is indifferent, and 9 is of high importance. Next table explains the scale in detail:
 
 |*Scale* | *Definition* | *Explanation*|
-|:--------:|:-----------|:------------|
+|:---:|:-------|:------------|
 |**1**|Same importance, indifference. |Both elements contribute equally towards the objective.|
 |**3**|Small importance one over another. |One element is slightly favored with respect to (W.R.T.) the other.|
 |**5**|Considerable importance, essential. |One characteristic is highly important WRT the other.|
