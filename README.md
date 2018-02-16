@@ -1,5 +1,5 @@
 # Decisor
-Binaries for the Decisor software (using Analytic Hierarchy Process - AHP)
+Download the Decisor software (using Analytic Hierarchy Process - AHP)
 --
 ## Introduction
 This is a short manual for the software called **Decisor**, main funcionalities and how to use it, in general.
@@ -7,22 +7,25 @@ This is a short manual for the software called **Decisor**, main funcionalities 
 AHP is a *Multicriteria Decision Method* (MCDM), also called *Multicriteria Decision Analysis* (MCDA) by some authors. It is used by many researchers and companies around the globe. It is equipped with a straightforward mechanism to allow complex decisions to be done where modellers input criteria and alternatives and their relationships in a numerical scale. It was invented by [Thomas L. Saaty](https://en.wikipedia.org/wiki/Thomas_L._Saaty) in 1980.
 
 There are several software on the market that handles AHP, for example:
-- SuperDecisions
-- PriEsT
-- Expert Choice
+- SuperDecisions (proprietary)
+- Expert Choice (proprietary)
+- Transparent Choice (proprietary)
+- PriEsT (free, hard to use, too many features)
+- Some online AHP solutions such as *AHP Online Calculator*, easyAHP (free for 3 alternatives and 3 criteria)
 
 However, those tools either lack user friendliness and support, or are proprietary, with a few exceptions. Our tool was conceived to bridge the gap between easiness to use and availability. We offer a simple interface where modellers easily enter criteria and alternatives and assign values among the entities, among other functionalities.
 
-Our software is suited for decision problems with multiple criteria and alternatives. Literature on the subject suggests to have no more than 7 criteria or 7 alternatives at once, however, the software will handle a much larger number. The problem will be the number of needed pairwise comparisons that must be input into the model. It was coded in [Qt](https://www.qt.io/), and it is initially suited for MS-Windows platforms, however, depending on demand, we may consider a GNU/Linux version.
+Our software is suited for decision problems with multiple criteria and alternatives. Literature on the subject suggests to have no more than 7 criteria or 7 alternatives at once, however, the software is prepared to handle a much larger number. The problem will be the number of needed pairwise comparisons that must be input into the model. It was coded in [Qt](https://www.qt.io/), and it is initially suited for MS-Windows platforms, however, depending on demand, we may consider a GNU/Linux version.
 
 ## Decisor functionalities
 - Easy to use interface
 - Open and save models very intuitively
+- Edit criteria and alternatives in a quick manner, i.e., adding, renaming, excluding
 - Multiple judgement scales (i.e., fundamental, exponential, etc.)
-- Group Decision Making
+- Group Decision Making (i.e., input several models, from several stakeholders and then the software applies a geometric mean)
 - B.O.C.R. (Benefits, Opportunities, Costs, Risks) analysis
-- Easy export to .csv file readable by MS-Excel or other spreadsheet software
-- Human readable model format (it is possible to directly edit the model in a Text Editor and then open in the tool)
+- Easy export to .csv (*comma separated file*) file readable by MS-Excel or other spreadsheet software
+- Human readable model format input (it is possible to directly edit the model in a Text Editor and then open in the tool)
 
 ## AHP basic notions
 A model is comprised by three 'entities': an **O**bjective, a list of **C**riteria, and a list of **A**lternatives.
@@ -46,4 +49,6 @@ And several other problems. The strength of AHP is its ability to easily create 
 
 ## User Manual
 The **Decisor** software is a very intuitive and simple tool to model decision problems using AHP.
+
+
 
