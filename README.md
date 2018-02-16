@@ -48,5 +48,5 @@ Decision problems usually arises on several domain applications, such as:
 And several other problems. The strength of AHP is its ability to easily create a model and extract actionable inferences, aiding enourmously decision making.
 
 ## User manual
-Please, take a look at the [User Manual](decisorGUI/user-manual) for further information on how to use the software.
+Please, take a look at the [User Manual](https://github.com/unisc/decisorGUI/blob/master/user-manual) for further information on how to use the software.
 
