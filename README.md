@@ -101,13 +101,12 @@ Now, we proceed to the pairwise comparisons. In the **Criteria** tab, the modell
 We have decided to enter importance by assigning different weights among criteria such as efficiency is considerably more important (5) than punctuality:
 ![Pairwise judgements](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-criteria-pairwise.png)
 
-The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. Note that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be changed to **off** if desired by clicking in *Settings > Automatic Calculation*.
+The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. Note that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be **swithed off** if desired by clicking in *Settings, Automatic Calculation*.
 
 Next, we should conduct the judgements for each criterion in respect to the possible alternatives:
 **Effectiveness with respect to all alternatives**
 ![Pairwise judgements for effectiveness](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-effectiveness-pairwise.png)
 
-And
 **Punctuality with respect to all alternatives**
 ![Pairwise judgements for punctuality](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-punctuality-pairwise.png)
 
