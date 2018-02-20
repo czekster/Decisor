@@ -52,9 +52,11 @@ We have decided to enter importance by assigning different weights among criteri
 
 ![Pairwise judgements](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-criteria-pairwise.png)
 
-The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. Note that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be **swithed off** if desired by clicking in *Settings, Automatic Calculation*.
+The modeller has entered with 5 in the first line, where Effectiveness (line parameter) is of high importance w.r.t. Punctuality. The line represents the comparison w.r.t. criteria x criteria or criteria x alternatives, i.e., if Effectiveness is more important than Punctuality, the first line (Effectiveness) should have a weight (in our case, of value equals to 3) wrt to the column (Punctuality). Note that if (i,j)=3, than the software automatically adds (j,i)=0.3333, i.e., the reciprocal value, representing that Punctuality is three times less important than Effectiveness.
 
-Next, we should conduct the judgements for each criterion in respect to the possible alternatives
+Note also that the software has already computed an intermediary weight vector, despite the fact that the pairwise comparisons for the alternatives are not yet entered. This could be **swithed off** if desired by clicking in *Settings, Automatic Calculation*. In the dummy model, for the criteria x criteria comparisons, the weight vector corresponds to (Effectiveness,Punctuality)=(0.833333,0.166667), meaning that, to this model, Effectiveness is deemed far more important than Punctuality.
+
+Comparing only criteria x criteria is not sufficient for AHP, one should take into account the effect of each criterion in the alternatives, performing the same pairwise comparisons (for the same judgement scale). Next, we should conduct the judgements for each criterion in respect to the possible alternatives.
 
 **Effectiveness with respect to all alternatives**
 ![Pairwise judgements for effectiveness](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-effectiveness-pairwise.png)
@@ -62,10 +64,32 @@ Next, we should conduct the judgements for each criterion in respect to the poss
 **Punctuality with respect to all alternatives**
 ![Pairwise judgements for punctuality](https://github.com/unisc/decisorGUI/blob/master/images/dummy-model-punctuality-pairwise.png)
 
-Note that the software presents the choice for this problem: management should hire Richard, despite the fact that Nancy is more punctual than others. This is due to the fact that the company prefers effectiveness over punctuality, as stated in the criteria tab for the model.
+Note that the software presents the choice for this problem: management should hire **Richard**, despite the fact that *Nancy* is more punctual than other options. This is due to the fact that the company prefers effectiveness over punctuality, as stated in the criteria tab for the model and explained earlier.
+
+The software also computes and shows the **synthesis/composition** matrix and the **Consistency Rates** for the criteria matrix, and for all other criteria under analysis. The literature recommend that the Consistency should be below 0.10 (10%), otherwise the judgements were inconsistent. For this cases, the best practice is to review the model with the domain experts or stakeholders and discuss the assigned weights, adjusting the model as they see appropriate.
 
 ## Working with more sophisticated models
 In next figure, we have clicked in *Open*, then selected the *Examples* folder and then we have choosed the **leader.txt** model):
 ![Leader Model](https://github.com/unisc/decisorGUI/blob/master/images/leader-model.png)
+
+The **Leader Model** have *four* criteria (Experience, Education, Charisma, Age) and *three* alternatives (Tom, Dick, Harry) for a hiring process within a company.
+
+![Leader model criteria](https://github.com/unisc/decisorGUI/blob/master/images/leader-model-criteria.png)
+
+Next, we present the criteria x criteria pairwise comparisons:
+
+![Leader model - pairwise judgements for criteria](https://github.com/unisc/decisorGUI/blob/master/images/leader-model-criteria-pairwise.png)
+
+Note that according to the input weights, **Experience** has a high value (0.539) in contrast with the rest of the criteria. This demonstrates the relative importance of this criterion in relation to the others. It remains the comparisons among each criterion to the alternatives, as follows:
+
+![Leader model - pairwise judgements for experience](https://github.com/unisc/decisorGUI/blob/master/images/leader-model-experience-pairwise.png)
+
+![Leader model - pairwise judgements for education](https://github.com/unisc/decisorGUI/blob/master/images/leader-model-education-pairwise.png)
+
+![Leader model - pairwise judgements for charisma](https://github.com/unisc/decisorGUI/blob/master/images/leader-model-charisma-pairwise.png)
+
+![Leader model - pairwise judgements for age](https://github.com/unisc/decisorGUI/blob/master/images/leader-model-age-pairwise.png)
+
+The software allows criteria and alternatives weights to be edited, and it also allows the definition of new models (i.e. having more criteria or alternatives), where the **Save as** option will create a new model file for analysis.
 
 
