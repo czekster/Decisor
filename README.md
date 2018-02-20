@@ -3,7 +3,7 @@ Download the Decisor software (using Analytic Hierarchy Process - AHP)
 --
 
 ## Introduction
-**decisorGUI** uses AHP (_Analytic Hierarchy Process_) to evaluate and help decision making process, interactively.<br>
+**Decisor** uses AHP (_Analytic Hierarchy Process_) to evaluate and help decision making process, interactively.<br>
 To use the software, you must have the following:
 - An **Objective**
 - A list of **criteria**
