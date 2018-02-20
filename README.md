@@ -12,4 +12,4 @@ To use the software, you must have the following:<br>
 <br>
 The software will help you map weights to criteria and alternatives, yielding a result vector that shows which alternative to pick according to a model.<br>
 
-For more information, please access our (wiki webpage)[https://github.com/unisc/decisorGUI/wiki].
+For more information, please access our [wiki webpage](https://github.com/unisc/decisorGUI/wiki).
