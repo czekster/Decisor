@@ -13,3 +13,18 @@ To use the software, you must have the following:
 The software will help you map weights to criteria and alternatives, yielding a result vector that shows which alternative to pick according to a model.
 
 For more information, please access our [wiki webpage](https://github.com/unisc/decisorGUI/wiki).
+
+## Source
+
+The original project (dated 2018) was written using [CodeBlocks](https://www.codeblocks.org/downloads/), on `src/` folder.
+The programming language we used was C/C++.
+
+## Attribution
+
+Feel free to clone it and use it.
+License is GPLv3.
+
+## Authors
+
+Ricardo M. Czekster
+Henrique Jung de Carvalho
